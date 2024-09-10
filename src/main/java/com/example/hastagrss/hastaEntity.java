@@ -25,7 +25,7 @@ public class hastaEntity {
     private String cinsiyet;
 
     @Column(name ="telefon")
-    private Long telefon;
+    private Integer telefon;
 
     @Column(name ="mail")
     private String mail;
@@ -37,7 +37,24 @@ public class hastaEntity {
     private Integer kayıt_tarihi;
 
     @Column(name ="kimlik")
-    private Long kimlik;
+    private Integer kimlik;
+
+    public hastaEntity(){
+
+    }
+
+    public hastaEntity(Integer id, String isim, String soyisim, Integer doğumtarihi, String cinsiyet, Integer telefon, String mail, String adres, Integer kayıt_tarihi, Integer kimlik){
+        this.id=id;
+        this.isim=isim;
+        this.soyisim=soyisim;
+        this.doğumtarihi=doğumtarihi;
+        this.cinsiyet=cinsiyet;
+        this.telefon=telefon;
+        this.mail=mail;
+        this.adres=adres;
+        this.kayıt_tarihi=kayıt_tarihi;
+        this.kimlik=kimlik;
+    }
 
 
 
@@ -83,11 +100,11 @@ public class hastaEntity {
         this.cinsiyet = cinsiyet;
     }
 
-    public Long getTelefon() {
+    public Integer getTelefon() {
         return telefon;
     }
 
-    public void setTelefon(Long telefon) {
+    public void setTelefon(Integer telefon) {
         this.telefon = telefon;
     }
 
@@ -115,11 +132,11 @@ public class hastaEntity {
         this.kayıt_tarihi = kayıt_tarihi;
     }
 
-    public Long getKimlik() {
+    public Integer getKimlik() {
         return kimlik;
     }
 
-    public void setKimlik(Long kimlik) {
+    public void setKimlik(Integer kimlik) {
         this.kimlik = kimlik;
     }
 }
