@@ -18,8 +18,8 @@ public class hastaEntity {
     @Column(name ="soyisim")
     private String soyisim;
 
-    @Column(name ="doğum_tarihi")
-    private Integer doğumtarihi;
+    @Column(name ="dogum_tarihi")
+    private Integer dogumtarihi;
 
     @Column(name ="cinsiyet")
     private String cinsiyet;
@@ -33,8 +33,8 @@ public class hastaEntity {
     @Column(name ="adres")
     private String adres;
 
-    @Column(name ="kayıt_tarihi")
-    private Integer kayıt_tarihi;
+    @Column(name ="kayit_tarihi")
+    private Integer kayit_tarihi;
 
     @Column(name ="kimlik")
     private Integer kimlik;
@@ -47,12 +47,12 @@ public class hastaEntity {
         this.id=id;
         this.isim=isim;
         this.soyisim=soyisim;
-        this.doğumtarihi=doğumtarihi;
+        this.dogumtarihi=doğumtarihi;
         this.cinsiyet=cinsiyet;
         this.telefon=telefon;
         this.mail=mail;
         this.adres=adres;
-        this.kayıt_tarihi=kayıt_tarihi;
+        this.kayit_tarihi=kayıt_tarihi;
         this.kimlik=kimlik;
     }
 
@@ -84,12 +84,12 @@ public class hastaEntity {
         this.soyisim = soyisim;
     }
 
-    public Integer getDoğumtarihi() {
-        return doğumtarihi;
+    public Integer getDogumtarihi() {
+        return dogumtarihi;
     }
 
-    public void setDoğumtarihi(Integer doğumtarihi) {
-        this.doğumtarihi = doğumtarihi;
+    public void setDogumtarihi(Integer dogumtarihi) {
+        this.dogumtarihi = dogumtarihi;
     }
 
     public String getCinsiyet() {
@@ -124,12 +124,12 @@ public class hastaEntity {
         this.adres = adres;
     }
 
-    public Integer getKayıt_tarihi() {
-        return kayıt_tarihi;
+    public Integer getKayit_tarihi() {
+        return kayit_tarihi;
     }
 
-    public void setKayıt_tarihi(Integer kayıt_tarihi) {
-        this.kayıt_tarihi = kayıt_tarihi;
+    public void setKayit_tarihi(Integer kayit_tarihi) {
+        this.kayit_tarihi = kayit_tarihi;
     }
 
     public Integer getKimlik() {

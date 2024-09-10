@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 public class hastaController {
     @Autowired
     hastaRepository hastaRepository;
@@ -23,7 +23,7 @@ public class hastaController {
     @PostMapping("/hastaEkle")
     public ResponseEntity<hastaEntity> addUser(@RequestBody hastaEntity hasta) {
         try{
-            hastaEntity hastaEntity = new hastaEntity(hasta.getId(),hasta.getIsim(),hasta.getSoyisim(),hasta.getDoğumtarihi(),hasta.getCinsiyet(),hasta.getTelefon(),hasta.getMail(),hasta.getAdres(),hasta.getKayıt_tarihi(),hasta.getKimlik());
+            hastaEntity hastaEntity = new hastaEntity(hasta.getId(),hasta.getIsim(),hasta.getSoyisim(),hasta.getDogumtarihi(),hasta.getCinsiyet(),hasta.getTelefon(),hasta.getMail(),hasta.getAdres(),hasta.getKayit_tarihi(),hasta.getKimlik());
             hastaEntity savedHasta = hastaRepository.save(hastaEntity);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         } catch (Exception e) {
