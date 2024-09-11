@@ -19,13 +19,13 @@ public class hastaEntity {
     private String soyisim;
 
     @Column(name ="dogum_tarihi")
-    private Integer dogumtarihi;
+    private String dogumtarihi;
 
     @Column(name ="cinsiyet")
     private String cinsiyet;
 
     @Column(name ="telefon")
-    private Integer telefon;
+    private String telefon;
 
     @Column(name ="mail")
     private String mail;
@@ -34,16 +34,16 @@ public class hastaEntity {
     private String adres;
 
     @Column(name ="kayit_tarihi")
-    private Integer kayit_tarihi;
+    private String kayit_tarihi;
 
     @Column(name ="kimlik")
-    private Integer kimlik;
+    private String kimlik;
 
     public hastaEntity(){
 
     }
 
-    public hastaEntity(Integer id, String isim, String soyisim, Integer doğumtarihi, String cinsiyet, Integer telefon, String mail, String adres, Integer kayıt_tarihi, Integer kimlik){
+    public hastaEntity(Integer id, String isim, String soyisim, String doğumtarihi, String cinsiyet, String telefon, String mail, String adres, String kayıt_tarihi, String kimlik){
         this.id=id;
         this.isim=isim;
         this.soyisim=soyisim;
@@ -84,11 +84,11 @@ public class hastaEntity {
         this.soyisim = soyisim;
     }
 
-    public Integer getDogumtarihi() {
+    public String getDogumtarihi() {
         return dogumtarihi;
     }
 
-    public void setDogumtarihi(Integer dogumtarihi) {
+    public void setDogumtarihi(String dogumtarihi) {
         this.dogumtarihi = dogumtarihi;
     }
 
@@ -100,11 +100,11 @@ public class hastaEntity {
         this.cinsiyet = cinsiyet;
     }
 
-    public Integer getTelefon() {
+    public String getTelefon() {
         return telefon;
     }
 
-    public void setTelefon(Integer telefon) {
+    public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
 
@@ -124,19 +124,19 @@ public class hastaEntity {
         this.adres = adres;
     }
 
-    public Integer getKayit_tarihi() {
+    public String getKayit_tarihi() {
         return kayit_tarihi;
     }
 
-    public void setKayit_tarihi(Integer kayit_tarihi) {
+    public void setKayit_tarihi(String kayit_tarihi) {
         this.kayit_tarihi = kayit_tarihi;
     }
 
-    public Integer getKimlik() {
+    public String getKimlik() {
         return kimlik;
     }
 
-    public void setKimlik(Integer kimlik) {
+    public void setKimlik(String kimlik) {
         this.kimlik = kimlik;
     }
 }
